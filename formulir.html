@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="gambar/icon.png" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+        * { margin: 0; padding: 0; }
+        body { font-family: 'Quicksand', sans-serif; }
+    </style>
+    <title>Padi Bagong - Beranda</title>
+</head>
+<body>
+    <nav style="background-color: #fff; padding: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div class="brand" style="display: flex; justify-content: space-between; align-items: center;">
+                <img src="gambar/icon.png" alt="Logo" style="height: 40px; width: auto;">
+                <span style="color: #333; font-size: 24px; font-weight: bold; margin-left: 10px;">PADI BAGONG</span>
+            </div>
+
+            <ul class="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 15px; font-size: large;">
+                <li><a href="index.html"    style="text-decoration: none; color: #333;">Beranda</a></li>
+                <li><a href="harga.html"    style="text-decoration: none; color: #333;">Harga</a></li>
+                <li><a href="formulir.html" style="text-decoration: none; color: gold;"><strong>Formulir</strong></a></li>
+                <li><a href="tabel.html"    style="text-decoration: none; color: #333;">Tabel</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="height: fit-content; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="margin-top: 5rem;">Pendaftaran Pembeli</h1>
+
+        <form action="https://poltektegal.ac.id/masuk" method="post">            
+            <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <label style="font-size: large;" for="nama"><strong>Nama</strong></label>
+                <input style="font-size: large; padding: 5px;" type="text" id="nama" name="nama" required placeholder="Nama Lengkap Anda"><br><br>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label style="font-size: large;" for="hp"><strong>No HP</strong></label>
+                <input style="font-size: large; padding: 5px;" type="text" id="hp" name="hp" required placeholder="08596756874687"><br><br>
+            </div>
+
+            <label style="font-size: large;" for="jenis_kelamin"><strong>Jenis Kelamin </strong></label>
+            <select style="font-size: large;" id="jenis_kelamin" name="jenis_kelamin">
+                <option style="font-size: large;" value="laki-laki">Laki-Laki</option>
+                <option style="font-size: large;" value="perempuan">Perempuan</option>
+            </select><br><br>
+
+            <label style="font-size: large;" for="catatan"><strong>Catatan Tambahan </strong></label><br>
+            <textarea style="font-size: large; padding: 5px; margin-top: 15px;" id="catatan" name="catatan" rows="4" cols="50" placeholder="patokan rumah atau terkait paket yang dibeli"></textarea><br><br>
+
+            <input style="margin-bottom: 5rem; background-color: #f39c12; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; width: 100%; text-decoration: none;" type="submit" value="Daftar">
+        </form>
+    </div>
+
+    <footer style="width: 100wh; margin-top: 20px; text-align: center; background-color: #333; color: #fff; padding: 10px;"">
+        <p><strong>© 2023 Padi Bagong. Hak Cipta PT. Pari Nasional.</strong></p>
+        <p>Alamat: Jl. Semar Mundur No.69, Kota Maido, Jawa Tengah</p>
+    </footer>
+</body>
+</html>
