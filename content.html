@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="gambar/icon.png" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+        * { margin: 0; padding: 0; }
+        body { font-family: 'Quicksand', sans-serif; }
+
+        .firefly {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('gambar/lebah.png') no-repeat center center/contain;
+            pointer-events: none;
+            transition: transform 0.2s ease-out;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const firefly = document.querySelector('.firefly');
+
+        document.addEventListener('mousemove', function (e) {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            const translateX = mouseX - firefly.clientWidth / 2;
+            const translateY = mouseY - firefly.clientHeight / 2;
+
+            firefly.style.transform = `translate(${translateX}px, ${translateY}px)`;
+        });
+        });
+    </script>
+    <title>Padi Bagong - About</title>
+</head>
+<body>
+    <nav style="background-color: #fff; padding: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div class="brand" style="display: flex; justify-content: space-between; align-items: center;">
+                <img src="gambar/icon.png" alt="Logo" style="height: 40px; width: auto;">
+                <span style="color: #333; font-size: 24px; font-weight: bold; margin-left: 10px;">PADI BAGONG</span>
+            </div>
+
+            <ul class="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 15px; font-size: large;">
+                <li><a href="index.html"  style="text-decoration: none; color: #333;">Home</a></li>
+                <li><a href="about.html"  style="text-decoration: none; color: #333;">About</a></li>
+                <li><a href="content.html" style="text-decoration: none; color: gold;"><strong>Content</strong></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="firefly"></div>
+
+    <div class="konten">
+        <div class="landing-page" style="height: calc(100vh - 60px); display: flex; justify-content: space-around; align-items: center;">
+            <div class="info" style="width: 50vw; display: flex; flex-direction: column; gap: 20px;">
+                <div class="slogan"">
+                    <h1>BIBIT PADI BAGONG</h1>
+                    <h2>Sekali Tanam Panen Berkali - Kali dan Tahan Penyakit</h2>
+                </div>
+                <p style="text-align: justify; font-size: large;">Bibit padi super bernama Bagong merupakan pilihan unggul bagi para petani. Tanaman ini telah menjadi buah bibir karena produktivitasnya yang luar biasa, dengan kemampuan untuk memberikan hasil panen berkali-kali lipat. Keunggulan lainnya adalah ketahanan Bagong terhadap berbagai penyakit, memastikan keberlanjutan produksi padi yang sehat. Pilihlah Bagong, solusi terbaik untuk hasil panen yang melimpah dan tanaman yang tangguh!</p>
+                <a href="" style="background-color: #f39c12; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; width: fit-content; text-decoration: none;">Beli Paket</a>
+            </div>
+            <img src="gambar/petani.svg" alt="ilustrasi" width="400" height="400" style="border-radius: 20px;">
+        </div>
+
+        <div class="informasi" style="height: 80vh; display: flex; justify-content: space-around; align-items: center;">
+            <div class="keunggulan" style="padding: 60px; border-radius: 15px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <h1>Keunggulan Bibit</h1>
+                <ul style="font-size: x-large;">
+                    <li>Sekali tanam untuk 1 tahun</li>
+                    <li><strong>Dapat dipanen hingga 6 kali</strong></li>
+                    <li><strong>Tahan berbagai penyakit lokal</strong></li>
+                    <li>Cocok di semua jenis tanah basah</li>
+                    <li>Menumbuhkan mikroba pada tanah</li>
+                </ul> 
+            </div>
+            <div class="cara-tananam" style="padding: 60px; border-radius: 15px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; gap: 20px;">
+                <h1>Cara Tanam</h1>
+                <ul style="font-size: x-large;">
+                    <li><strong>Semai beberapa hari sebelum musim penghujan</strong></li>
+                    <li>Tanam bibit ketika sudah memiliki daun kecil</li>
+                    <li><strong>Beri pupuk setiap seminggu sekali</strong></li>
+                    <li>Gunakan pestisida seminggu sekali</li>
+                    <li>Tinggi air minimal 3cm dari atas lumpur</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="konten" style="height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: space-around;">
+        <div class="judul" style="display: flex; flex-direction: column; align-items: center;">
+            <h1>Daftar Paket</h1>
+            <h2>pilih paket yang sesuai kebutuhanmu</h2>
+        </div>
+
+        <div class="daftar-paket" style="display: flex; justify-content: space-around; align-items: center;">
+            <div style="width: 300px; height: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; justify-content: space-around;">
+                <h2>Belajar</h2>
+                <p>1kg bibit padi bagong, buku panduan</p>
+                <div style="font-size: 24px; margin: 16px 0;">50K <span style="color: #f39c12;">(diskon 20%)</span></div>
+                <button style="background-color: #f39c12; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">Beli</button>
+            </div>
+    
+            <div style="width: 300px; height: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; justify-content: space-around;">
+                <h2>Pemula</h2>
+                <p>1 karung bibit padi bagong, pupuk urea 1kg, buku panduan</p>
+                <div style="font-size: 24px; margin: 16px 0;">160K <span style="color: #f39c12;">(diskon 20%)</span></div>
+                <button style="background-color: #f39c12; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">Beli</button>
+            </div>
+    
+            <div style="width: 300px; height: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; justify-content: space-around;">
+                <h2>Petani</h2>
+                <p>3 karung bibit padi bagong, gratis pengiriman</p>
+                <div style="font-size: 24px; margin: 16px 0;">200K <span style="color: #f39c12;">(diskon 40%)</span></div>
+                <button style="background-color: #f39c12; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">Beli</button>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1>Tabel Gizi Padi</h1>
+
+        <table border="1" cellspacing="2" cellpadding="5" style="width: 60%; border-collapse: collapse; margin: 20px;">
+            <tr>
+                <th rowspan="2" style="background-color: #f2f2f2; padding: 8px; text-align: left; font-size: large;">Nutrisi</th>
+                <th colspan="2" style="background-color: #f2f2f2; padding: 8px; text-align: center; font-size: large;">Kandungan (per 100g)</th>
+            </tr>
+
+            <tr>
+                <th style="background-color: crimson; padding: 8px; text-align: left; font-size: large;">Padi Biasa</th>
+                <th style="background-color: gold; padding: 8px; text-align: left; font-size: large;">Padi 'Bagong'</th>
+            </tr>
+
+            <tr>
+                <td style="padding: 8px; text-align: left; font-size: large;">Kalori</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">130 k</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">400 k</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left; font-size: large;">Karbohidrat</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">28 g</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">85 g</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left; font-size: large;">Protein</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">2.5 g</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">12 g</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left; font-size: large;">Lemak</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">0.3 g</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">1.5 g</td>
+            </tr>
+            <tr>
+                <td style="padding: 8px; text-align: left; font-size: large;">Serat Makanan</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">1 g</td>
+                <td style="padding: 8px; text-align: left; font-size: large;">4 g</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="height: fit-content; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h1 style="margin-top: 5rem;">Pendaftaran Pembeli</h1>
+
+        <form action="https://poltektegal.ac.id/masuk" method="post">            
+            <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <label style="font-size: large;" for="nama"><strong>Nama</strong></label>
+                <input style="font-size: large; padding: 5px;" type="text" id="nama" name="nama" required placeholder="Nama Lengkap Anda"><br><br>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label style="font-size: large;" for="hp"><strong>No HP</strong></label>
+                <input style="font-size: large; padding: 5px;" type="text" id="hp" name="hp" required placeholder="08596756874687"><br><br>
+            </div>
+
+            <label style="font-size: large;" for="jenis_kelamin"><strong>Jenis Kelamin </strong></label>
+            <select style="font-size: large;" id="jenis_kelamin" name="jenis_kelamin">
+                <option style="font-size: large;" value="laki-laki">Laki-Laki</option>
+                <option style="font-size: large;" value="perempuan">Perempuan</option>
+            </select><br><br>
+
+            <label style="font-size: large;" for="catatan"><strong>Catatan Tambahan </strong></label><br>
+            <textarea style="font-size: large; padding: 5px; margin-top: 15px;" id="catatan" name="catatan" rows="4" cols="50" placeholder="patokan rumah atau terkait paket yang dibeli"></textarea><br><br>
+
+            <input style="margin-bottom: 5rem; background-color: #f39c12; color: #fff; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; width: 100%; text-decoration: none;" type="submit" value="Daftar">
+        </form>
+    </div>
+
+    <footer style="width: 100wh; margin-top: 20px; text-align: center; background-color: #333; color: #fff; padding: 10px;"">
+        <p><strong>© 2023 Padi Bagong. Hak Cipta PT. Pari Nasional.</strong></p>
+        <p>Alamat: Jl. Semar Mundur No.69, Kota Maido, Jawa Tengah</p>
+    </footer>
+</body>
+</html>

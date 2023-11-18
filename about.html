@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="gambar/icon.png" type="image/x-icon" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap');
+        * { margin: 0; padding: 0; }
+        body { font-family: 'Quicksand', sans-serif; }
+
+        .youtube-button {
+            display: inline-block;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .youtube-button:hover {
+            background-color: #cc0000;
+        }
+    </style>
+    <title>Padi Bagong - About</title>
+</head>
+<body>
+    <nav style="background-color: #fff; padding: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+            <div class="brand" style="display: flex; justify-content: space-between; align-items: center;">
+                <img src="gambar/icon.png" alt="Logo" style="height: 40px; width: auto;">
+                <span style="color: #333; font-size: 24px; font-weight: bold; margin-left: 10px;">PADI BAGONG</span>
+            </div>
+
+            <ul class="menu" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 15px; font-size: large;">
+                <li><a href="index.html"  style="text-decoration: none; color: #333;">Home</a></li>
+                <li><a href="about.html" style="text-decoration: none; color: gold;"><strong>About</strong></a></li>
+                <li><a href="content.html" style="text-decoration: none; color: #333;">Content</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="konten">
+        <div class="landing-page" style="height: calc(100vh - 60px); display: flex; justify-content: space-around; align-items: center;">
+            <div class="konten" style="height: calc(100vh - 60px); display: flex; flex-direction: column; justify-content: space-around;">
+                <div class="judul" style="display: flex; flex-direction: column; align-items: center;">
+                    <h1>About</h1>
+                    <h2>Silahkan jika anda memerlukan kami segara menghubungi</h2>
+                </div>
+        
+                <div class="daftar-paket" style="display: flex; justify-content: space-around; align-items: center; gap: 50px;">
+                    <div style="width: 300px; height: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; justify-content: space-around;">
+                        <h2>Email</h2>
+                        <p>support@padibagong.com</p>
+                        <p>bantuan@padibagong.com</p>
+                    </div>
+            
+                    <div style="width: 300px; height: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; justify-content: space-around;">
+                        <h2>Akun Youtube</h2>
+                        <a href="https://www.youtube.com/@Tanduria/" class="youtube-button" target="_blank">Padi Bagong</a>
+                    </div>
+            
+                    <div style="width: 300px; height: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 16px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); display: flex; flex-direction: column; justify-content: space-around;">
+                        <h2>Group Pesan Singkat</h2>
+                        <p>Telegram : Padi Bagong Sukses</p>
+                        <p>Discord  : bit.ly/padibagong_sukses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="width: 100wh; margin-top: 20px; text-align: center; background-color: #333; color: #fff; padding: 10px;"">
+        <p><strong>© 2023 Padi Bagong. Hak Cipta PT. Pari Nasional.</strong></p>
+        <p>Alamat: Jl. Semar Mundur No.69, Kota Maido, Jawa Tengah</p>
+    </footer>
+</body>
+</html>
